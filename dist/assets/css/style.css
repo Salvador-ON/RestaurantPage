@@ -1,0 +1,37 @@
+.btn-click:hover{
+  background-color: rgb(105, 53, 15);
+  cursor: pointer;
+}
+#content{
+  background: url(../media/donuts-backgroun.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+}
+
+.bg-choco{
+  background-color: rgb(73, 36, 10);
+}
+
+.bg-bread{
+  background-color: rgb(240,209,160);
+}
+
+.text-choc{
+  color: rgb(43, 21, 5);
+}
+
+.info-center{
+  background-color: rgba(24, 12, 3, 0.95);
+  width: 80vw;
+  height: 60vh;
+  margin: 0 auto;
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+}
+
+.donut{
+  width:120px;
+}
