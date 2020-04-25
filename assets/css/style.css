@@ -3,7 +3,7 @@
   cursor: pointer;
 }
 #content{
-  background: url(../media/donuts-backgroun.jpg);
+  background: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F05%2Fkrispy-kreme-national-doughnut-day-giveaway-001.jpg?q=90&w=1400&cbr=1&fit=max);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -23,7 +23,7 @@
 }
 
 .info-center{
-  background-color: rgba(24, 12, 3, 0.95);
+  background-color: rgba(24, 12, 3, 0.651);
   width: 80vw;
   height: 60vh;
   margin: 0 auto;
