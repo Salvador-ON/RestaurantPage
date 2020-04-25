@@ -1,43 +1,70 @@
 function navbar() {
-  document.getElementById("content").innerHTML = "";
   let navbar = document.createElement('nav');
   navbar.id = 'navbar';
-  navbar.classList.add('navbar', 'navbar-light', 'bg-choco');
+  navbar.classList.add('navbar', 'navbar-light', 'bg-choco', 'font-weight-bold', 'text-pk');
   document.getElementById("content").appendChild(navbar);
+
+  
   let name = document.createElement('a');
-  name.classList.add('navbar-brand', 'text-white');
+  name.classList.add('navbar-brand', 'text-pk', 'font-weight-bold');
+  name.id='nav-text'
   name.href = '#';
   name.innerHTML = 'Donuts at Home'
   document.getElementById("navbar").appendChild(name);
 
+  let icon1 = document.createElement('img');
+  icon1.className = 'mx-2 donut-logo'
+  icon1.src ='https://www.seekpng.com/png/full/34-341786_donut-png-donut-clipart.png'
+  document.getElementById("nav-text").appendChild(icon1);
+
   let menu = document.createElement('div');
   menu.id = 'menu';
-  menu.classList.add('d-flex');
+  menu.classList.add('d-flex','align-items-center');
   document.getElementById("navbar").appendChild(menu);
 
   let option1 = document.createElement('div');
   option1.id = 'o1';
   option1.innerHTML = 'Home';
   option1.onclick = function () { home(); };
-  option1.classList.add('mx-2', 'p-3', 'text-white', 'btn-click');
+  option1.classList.add('h4','mx-2', 'p-1', 'text-pk', 'btn-click', 'font-weight-bold','mb-0','rounded-pill');
   document.getElementById("menu").appendChild(option1);
 
   let option2 = document.createElement('div');
   option2.id = 'o2';
   option2.innerHTML = 'Menu';
   option2.onclick = function () { donutMenu(); };
-  option2.classList.add('mx-2', 'p-3', 'text-white', 'btn-click');
+  option2.classList.add('h4','mx-2', 'p-1', 'text-pk', 'btn-click', 'font-weight-bold','mb-0', 'rounded-pill');
   document.getElementById("menu").appendChild(option2);
 
   let option3 = document.createElement('div');
   option3.id = 'o3';
+  option3.onclick = function () { orderNow(); };
   option3.innerHTML = 'Make your order';
-  option3.classList.add('mx-2', 'p-3', 'text-white', 'btn-click');
+  option3.classList.add('mx-2','h4', 'p-1', 'text-pk', 'btn-click', 'font-weight-bold','mb-0', 'rounded-pill');
   document.getElementById("menu").appendChild(option3);
 }
 
 function footer(){
-  
+  let footer = document.createElement('footer');
+  footer.id = 'footer';
+  footer.className = ('fixed-bottom bg-pk py-2 d-flex justify-content-center align-items-center');
+  document.getElementById("content").appendChild(footer);
+
+  let icon1 = document.createElement('img');
+  icon1.className = 'mx-2 donut-logo'
+  icon1.src ='https://www.seekpng.com/png/full/34-341786_donut-png-donut-clipart.png'
+  document.getElementById("footer").appendChild(icon1);
+
+  let name = document.createElement('span');
+  name.id = 'name';
+  name.innerText='Donuts at Home';
+  name.className = ('h2 font-weight-bold text-choc pt-1');
+  document.getElementById("footer").appendChild(name);
+
+  let icon2 = document.createElement('i');
+  icon2.id = 'icon2';
+  icon2.className = ('mx-2 fas fa-home fa-2x text-choc');
+  document.getElementById("footer").appendChild(icon2);
 }
 
 function centralContainer() {
@@ -80,7 +107,7 @@ function donutMenu() {
   document.getElementById("centralCont").innerHTML = "";
   let title = document.createElement('h1');
   title.id = "title";
-  title.innerHTML = 'Any Donut $5.25';
+  title.innerHTML = 'Donut Price $5.25';
   title.classList.add('h1', 'text-center', 'text-white', 'pt-2');
   document.getElementById("centralCont").appendChild(title);
 
@@ -107,7 +134,7 @@ function donutMenu() {
 
     let donutCont = document.createElement('div');
     donutCont.id = link[2];
-    donutCont.classList.add('donut-cont', 'mx-2', 'd-flex', 'justify-content-center', 'flex-column');
+    donutCont.classList.add('donut-cont', 'mx-2', 'd-flex', 'justify-content-center', 'flex-column' ,'text-white', 'font-weight-bold' );
     document.getElementById("menuCont").appendChild(donutCont);
 
     let imageDonut = document.createElement('img');
@@ -117,10 +144,46 @@ function donutMenu() {
     document.getElementById(link[2]).appendChild(imageDonut);
 
     let paraDonut = document.createElement('p');
-    paraDonut.className = 'text-white text-center';
+    paraDonut.className = 'text-center';
     paraDonut.innerText = link[2];
     document.getElementById(link[2]).appendChild(paraDonut);
   });
+}
+
+function orderNow() {
+  document.getElementById("centralCont").innerHTML = "";
+  let title = document.createElement('h1');
+  title.id = "orderTitle";
+  title.innerHTML = 'Make your Order';
+  title.className = 'h1 text-center text-white pt-2';
+  document.getElementById("centralCont").appendChild(title);
+
+  let paragraph1 = document.createElement('p');
+  paragraph1.id = "oder-p1";
+  paragraph1.innerHTML = 'Send us a WhatsApp Message or Call us.';
+  paragraph1.className = 'text-white h2 text-center px-4 py-4';
+  document.getElementById("centralCont").appendChild(paragraph1);
+
+  let paragraph2 = document.createElement('p');
+  paragraph2.id = "order-p2";
+  paragraph2.className = 'text-white h1 text-center py-4 px-3';
+  document.getElementById("centralCont").appendChild(paragraph2);
+
+  let icon = document.createElement('i');
+  icon.id = "icon-p2";
+  icon.className = 'fas fa-phone-square-alt mx-2';
+  document.getElementById("order-p2").appendChild(icon);
+
+  let span = document.createElement('ispan');
+  span.id = "span-p2";
+  span.innerText = '811-574-8659'
+  document.getElementById("order-p2").appendChild(span);
+
+  let paragraph3 = document.createElement('p');
+  paragraph3.id = "order-p3";
+  paragraph3.innerHTML = 'You can pay with Debit, Credit Card or Cash';
+  paragraph3.className=('text-white h2 text-center py-4 px-3');
+  document.getElementById("centralCont").appendChild(paragraph3);
 }
 
 
@@ -129,6 +192,8 @@ function donutMenu() {
 navbar();
 
 centralContainer();
+
+footer();
 
 home();
 
