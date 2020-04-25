@@ -1,6 +1,7 @@
 .btn-click:hover{
   color: rgb(105, 53, 15)!important;
   background-color: rgb(241,88,156);
+  cursor: pointer;
 }
 #content{
   background: url(https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F05%2Fkrispy-kreme-national-doughnut-day-giveaway-001.jpg?q=90&w=1400&cbr=1&fit=max);
@@ -18,16 +19,13 @@
   color: rgb(241,88,156)!important;
 }
 
+.text-pk2{
+  color: rgb(241,88,156)!important;
+}
+
 .bg-pk{
   background-color: rgb(241,88,156);
 }
-
-/* .text-pk{
-  color: rgb(73, 36, 10);
-} */
-
-
-
 
 .bg-bread{
   background-color: rgb(240,209,160);
@@ -38,7 +36,7 @@
 }
 
 .info-center{
-  background-color: rgba(24, 12, 3, 0.651);
+  background-color: rgba(24, 12, 3, 0.788);
   width: 80vw;
   height: 60vh;
   margin: 0 auto;
@@ -49,11 +47,9 @@
 
 .donut{
   width:120px;
-  /* transition: transform .2s;  */
 }
 
 .donut:hover{
-  /* transform: scale(1.5); */
 }
 
 .donut-cont{
@@ -68,4 +64,8 @@
 .donut-logo{
   width:60px;
   /* transition: transform .2s;  */
+}
+
+.font-size-md{
+  font-size: 2rem !important;
 }

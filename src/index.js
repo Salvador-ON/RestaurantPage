@@ -6,7 +6,7 @@ function navbar() {
 
   
   let name = document.createElement('a');
-  name.classList.add('navbar-brand', 'text-pk', 'font-weight-bold');
+  name.classList.add('navbar-brand', 'text-pk', 'font-weight-bold', 'font-size-md');
   name.id='nav-text'
   name.href = '#';
   name.innerHTML = 'Donuts at Home'
@@ -81,7 +81,7 @@ function home() {
   let title = document.createElement('h1');
   title.id = "title";
   title.innerHTML = 'Donuts at Home';
-  title.classList.add('h1', 'text-center', 'text-white', 'pt-2');
+  title.classList.add('h1', 'text-center', 'text-pk2', 'pt-2');
   document.getElementById("centralCont").appendChild(title);
 
   let paragraph1 = document.createElement('p');
@@ -108,7 +108,7 @@ function donutMenu() {
   let title = document.createElement('h1');
   title.id = "title";
   title.innerHTML = 'Donut Price $5.25';
-  title.classList.add('h1', 'text-center', 'text-white', 'pt-2');
+  title.classList.add('h1', 'text-center', 'text-pk2', 'pt-2');
   document.getElementById("centralCont").appendChild(title);
 
   let menuCont = document.createElement('div');
@@ -155,7 +155,7 @@ function orderNow() {
   let title = document.createElement('h1');
   title.id = "orderTitle";
   title.innerHTML = 'Make your Order';
-  title.className = 'h1 text-center text-white pt-2';
+  title.className = 'h1 text-center text-pk2 pt-2';
   document.getElementById("centralCont").appendChild(title);
 
   let paragraph1 = document.createElement('p');
@@ -166,12 +166,12 @@ function orderNow() {
 
   let paragraph2 = document.createElement('p');
   paragraph2.id = "order-p2";
-  paragraph2.className = 'text-white h1 text-center py-4 px-3';
+  paragraph2.className = 'text-pk2 h1 text-center py-4 px-3';
   document.getElementById("centralCont").appendChild(paragraph2);
 
   let icon = document.createElement('i');
   icon.id = "icon-p2";
-  icon.className = 'fas fa-phone-square-alt mx-2';
+  icon.className = 'fas fa-phone-square-alt mx-2 text-pk2';
   document.getElementById("order-p2").appendChild(icon);
 
   let span = document.createElement('ispan');
