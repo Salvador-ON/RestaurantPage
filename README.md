@@ -1,6 +1,6 @@
-# Rstaurant  Project
+# Restaurant  Project
 
-A Tic Tac Toe game you can play in your browser!
+A stylish website menu for a donuts store.
 
 ![](dist/assets/media/Captura.PNG)
 
@@ -10,7 +10,7 @@ A Tic Tac Toe game you can play in your browser!
 
 # What it does
 
-- The website include 1 page with 3 tabs buttons that change the content of the central container to display different information using javascript modules.
+- The website includes 1 page with 3 tabs buttons that change the content of the central container to display different information using javascript modules.
 
 
 ## Author
