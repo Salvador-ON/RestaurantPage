@@ -10,7 +10,7 @@ A stylish website menu for a donuts store.
 
 # What it does
 
-- The website includes 1 page with 3 tabs buttons that change the content of the central container to display different information using javascript modules.
+- The website includes 1 page with 3 tabs buttons that change the content of the central container to display different information using JavaScript modules.
 
 
 ## Author
